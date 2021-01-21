@@ -1,7 +1,7 @@
 {
-  "name": "staging.thesystem.at",
+  "name": "staging.artificialmuseum.com",
   "version": "0.0.1",
-  "description": "TheSystem - Artificial Museum - staging",
+  "description": "Artificial Museum - TheSystemCollective - Staging Environment.",
   "private": true,
   "scripts": {
     "start": "npm run dev",
@@ -9,14 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thesystemcollective/thesystem.at.git"
+    "url": "git+https://github.com/artificialmuseum/artificialmuseum.com.git"
   },
   "author": "TheSystemCollective",
-  "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/thesystemcollective/thesystem.at/issues"
+    "url": "https://github.com/artificialmuseum/artificialmuseum.com/issues"
   },
-  "homepage": "https://thesystem.at",
+  "homepage": "https://artificialmuseum.com",
   "devDependencies": {
     "@grundstein/gss": "github:grundstein/gss"
   },
