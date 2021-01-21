@@ -1,3 +1,3 @@
-# TheSystem - Artificial Museum
+# Artificial Museum
 
 staging environment
