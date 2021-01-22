@@ -168,7 +168,8 @@ footer.main {
   z-index: 2000;
 }
 #warning,
-#timeout-warning {
+#timeout-warning,
+#toofar-warning {
   z-index: 2001;
 }
 #hud, #hud .w, #hud-exit-button {
@@ -740,7 +741,7 @@ button:disabled {
     height: 50px;
     width: 50px;
   }
-#timeout-warning-cancel {
+#timeout-warning-cancel, #toofar-warning-cancel-button {
   cursor: pointer;
   position: absolute;
   right: 15px;
@@ -752,6 +753,21 @@ button:disabled {
 #timeout-warning-header-done {
   display: none;
 }
+#toofar-warning {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fafafa;
+  display: none;
+  left: 15px;
+  position: fixed;
+  text-align: center;
+  top: 40px;
+  width: calc(100vw - 30px);
+}
+#toofar-warning .container {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 15px;
+  }
 .videoEmbed {
   display: block;
   height: 95vh;
@@ -769,6 +785,10 @@ button:disabled {
     }
 
     .screen-visible #timeout-warning {
+      width: calc(100vw - 430px);
+    }
+
+    .screen-visible #toofar-warning {
       width: calc(100vw - 430px);
     }
 
