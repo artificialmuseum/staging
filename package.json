@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "start": "npm run dev",
-    "dev": "grundstein-server --dir ./docs --port 8000 --cors '*'"
+    "dev": "grundstein-server --dir ./docs --port 8000 --cors '*'",
+    "rebuild": "cp ../ar/docs/* ./docs/ -r"
   },
   "repository": {
     "type": "git",
