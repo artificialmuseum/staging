@@ -108,8 +108,8 @@ th {
   src:
     local('Noto Sans Italic'),
     local('NotoSans-Italic'),
-    url(https://static.thesystem.at/font/notosans-regular-italic.woff2) format('woff2'),
-       url(https://static.thesystem.at/font/notosans-regular-italic.woff) format('woff');
+    url(https://static.artificialmuseum.com/font/notosans-regular-italic.woff2) format('woff2'),
+       url(https://static.artificialmuseum.com/font/notosans-regular-italic.woff) format('woff');
 }
 @font-face {
   font-family: 'Noto';
@@ -119,8 +119,8 @@ th {
   src:
     local('Noto Sans SemiBold Italic'),
     local('NotoSans-SemiBoldItalic'),
-    url(https://static.thesystem.at/font/notosans-semibold-italic.woff2) format('woff2'),
-       url(https://static.thesystem.at/font/notosans-semibold-italic.woff) format('woff');
+    url(https://static.artificialmuseum.com/font/notosans-semibold-italic.woff2) format('woff2'),
+       url(https://static.artificialmuseum.com/font/notosans-semibold-italic.woff) format('woff');
 }
 @font-face {
   font-family: 'Noto';
@@ -130,10 +130,10 @@ th {
   src:
     local('Noto Sans'),
     local('NotoSans'),
-    url(https://static.thesystem.at/font/notosans-regular.woff2) format('woff2'),
-       url(https://static.thesystem.at/font/notosans-regular.woff) format('woff');
+    url(https://static.artificialmuseum.com/font/notosans-regular.woff2) format('woff2'),
+       url(https://static.artificialmuseum.com/font/notosans-regular.woff) format('woff');
 }
-@font-face {
+/* @font-face {
   font-family: 'Noto';
   font-style: normal;
   font-weight: 600;
@@ -141,9 +141,9 @@ th {
   src:
     local('Noto Sans Semi Bold'),
     local('NotoSans-SemiBold'),
-    url(https://static.thesystem.at/font/notosans-semibold.woff2) format('woff2'),
-       url(https://static.thesystem.at/font/notosans-semibold.woff) format('woff');
-}
+    url(https://static.artificialmuseum.com/font/notosans-semibold.woff2) format('woff2'),
+       url(https://static.artificialmuseum.com/font/notosans-semibold.woff) format('woff');
+} */
 .leaflet-map-pane canvas { z-index: 100; }
 .leaflet-map-pane svg, .leaflet-tile-pane { z-index: 200; }
 .leaflet-pane, .leaflet-overlay-pane { z-index: 400; }
