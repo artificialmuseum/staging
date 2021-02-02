@@ -522,7 +522,7 @@ footer.main nav li {
           margin: 1em 0 0.2em;
         }
 .screen[data-name="list"] .detail .description {
-        margin: 0 0 1em;
+        margin: 1em 0;
       }
 .screen[data-name="list"] .detail .description p {
           margin: 0;
