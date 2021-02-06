@@ -219,7 +219,7 @@ body {
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
   padding: 0 15px;
-  width: 100vw;
+  width: 100%;
 }
 body::-webkit-scrollbar {
     width: 8px;
