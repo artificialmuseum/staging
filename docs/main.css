@@ -220,6 +220,7 @@ body {
       overscroll-behavior: none;
   padding: 0 15px;
   width: 100%;
+  position: absolute;
 }
 body::-webkit-scrollbar {
     width: 8px;
