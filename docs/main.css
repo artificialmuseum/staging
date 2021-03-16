@@ -807,6 +807,9 @@ button:disabled {
     max-width: 400px;
     padding: 15px;
   }
+#toofar-warning .container button {
+      margin: 1em auto;
+    }
 .videoEmbed {
   display: block;
   height: 95vh;
@@ -1399,6 +1402,50 @@ svg.leaflet-image-layer.leaflet-interactive path {
     text-align: center;
     transform: translateX(-50%);
   }
+.leaflet-marker-icon[title^='Sandkasten'] {
+  background: #c820c8;
+  border-radius: 100%;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes blink {
+  0% {
+    box-shadow: #c820c8 0 0 0 0;
+  }
+
+  25% {
+    box-shadow: #c820c8 0 0 0 0;
+  }
+
+  75% {
+    box-shadow: #c820c8 0 0 10px 10px;
+  }
+
+  100% {
+    box-shadow: #c820c8 0 0 0 0;
+  }
+}
+@keyframes blink {
+  0% {
+    box-shadow: #c820c8 0 0 0 0;
+  }
+
+  25% {
+    box-shadow: #c820c8 0 0 0 0;
+  }
+
+  75% {
+    box-shadow: #c820c8 0 0 10px 10px;
+  }
+
+  100% {
+    box-shadow: #c820c8 0 0 0 0;
+  }
+}
 body.three-running {
   overflow: hidden;
 }
@@ -1456,11 +1503,11 @@ body.three-running {
     background: transparent;
   }
 #three-video {
+  width: 0;
+  height: 0;
   left: 0;
   top: 0;
   position: absolute;
-  height: 0;
-  width: 0;
   overflow: hidden;
 }
 @media screen and (max-height: 500px) and (orientation: landscape) {
