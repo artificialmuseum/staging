@@ -694,7 +694,7 @@ button.styled {
   box-shadow:
     5px 0 10px #e0e0e0,
     -5px 0 10px  #fff;
-  display: inline-block;
+  display: block;
   font-size: 13px;
   margin: 0 auto;
   padding: 10px 15px;
@@ -708,7 +708,7 @@ button.styled.margin {
   box-shadow:
     5px 0 10px #e0e0e0,
     -5px 0 10px  #fff;
-  display: inline-block;
+  display: block;
   font-size: 13px;
   margin: 0 auto;
   padding: 10px 15px;
@@ -716,6 +716,10 @@ button.styled.margin {
 .button.styled.margin {
     margin: 26px auto 0;
   }
+button.inline,
+.button.inline {
+  display: inline-block;
+}
 button.inverse {
   background: #fafafa;
   box-shadow: none;
@@ -1510,6 +1514,31 @@ body.three-running {
   position: absolute;
   overflow: hidden;
 }
+#toggle-animation-button {
+  width: 66px;
+  height: 48px;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  display: none;
+}
+#toggle-animation-button .visible {
+    display: block;
+  }
+#toggle-animation-button svg {
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+  }
+#toggle-animation-button .pause {
+    display: none;
+  }
+#toggle-animation-button.play .play {
+      display: none;
+    }
+#toggle-animation-button.play .pause {
+      display: block;
+    }
 @media screen and (max-height: 500px) and (orientation: landscape) {
   #map-container {
     font-size: 0.8em;
