@@ -651,7 +651,7 @@ footer.main nav li {
         font-size: 18px;
       }
 .screen.list .detail .artists li, .screen.list .detail .artists3d li {
-          display: inline-block;
+          display: inline-block !important;
           margin: 0 0 0.3em;
           width: 100%;
         }
