@@ -285,9 +285,26 @@ nav li.active {
               text-decoration: underline 2px;
       color: #0c0c0c;
     }
+nav li a.active {
+      -webkit-text-decoration: underline 2px;
+              text-decoration: underline 2px;
+      color: #0c0c0c;
+    }
 nav li:last-child {
       margin: 0;
     }
+.nav.menu.toggle.list {
+  text-decoration: none;
+}
+.nav.menu.toggle.list span:last-child {
+      color: #666;
+    }
+.nav.menu.toggle.list.exit span:first-child {
+        color: #666;
+      }
+.nav.menu.toggle.list.exit span:last-child {
+        color: #0c0c0c;
+      }
 canvas {
   display: block;
   left: 0;
@@ -308,6 +325,9 @@ header.main nav.right {
 header.main nav.left {
     float: left;
   }
+header.main a {
+    text-decoration: none;
+  }
 footer.main {
   background-color: #fafafa;
   display: inline-block;
@@ -322,6 +342,12 @@ footer.main nav.right {
 footer.main nav.left {
     float: left;
   }
+footer.main a {
+    text-decoration: none;
+  }
+.nav {
+  cursor: pointer;
+}
 header.main {
   top: 0;
   padding: 7px 15px 0;
@@ -334,14 +360,14 @@ header.main .logo span {
       float: left;
       font-size: 18px;
       font-weight: 500;
-      margin: -2px 5px 0;
+      margin: -1px 5px 0;
       padding: 0;
       line-height: 1;
     }
 header.main .logo svg {
       cursor: pointer;
       float: left;
-      height: 15px;
+      height: 17px;
     }
 footer.main {
   bottom: 0;
@@ -354,21 +380,24 @@ footer.main nav li {
   background-color: #fafafa;
   display: none;
   left: 0;
-  min-height: calc(100% - 70px);
+  height: calc(100% - 70px);
   overflow-x: hidden;
-  padding: 20px;
+  padding: 0 15px 15px 20px;
   position: absolute;
   top: 35px;
   width: 100%;
 }
+.screen.sub {
+    top: calc(35px + 7px);
+  }
 .screen h2,
   .screen h3,
   .screen h4 {
     font-weight: 500;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
 .screen h2 {
-    font-size: 2em;
+    font-size: 1.7em;
   }
 .screen h3 {
     font-size: 1.1em;
@@ -515,19 +544,86 @@ footer.main nav li {
           line-height: 1.3em;
           margin: 0;
         }
+.screen .artist.detail .artifacts .artifact, .screen .artist.detail .visualizations .artifact {
+        padding: 0 0 1em;
+      }
+.screen .artist.detail .artifacts h3, .screen .artist.detail .visualizations h3 {
+        margin: 0.1em 0 0.5em;
+      }
+.screen .artist.detail .artifacts h4, .screen .artist.detail .visualizations h4 {
+        text-align: right;
+        font-size: 1em;
+        color: #666;
+        border-top: 1px solid #e0e0e0;
+      }
+.screen.list .location.detail .logo {
+          float: left;
+          width: 30px;
+          height: auto;
+        }
+.screen.list .location.detail h3 {
+          margin: 0;
+          line-height: 28px;
+        }
+.screen.list .location.detail .title {
+          margin: 1em 0 0.5em;
+        }
+.screen.list .location .info, .screen.list .artist .info {
+        display: inline-block;
+      }
+.screen.list .location .artifact, .screen.list .artist .artifact {
+        display: inline-block;
+        clear: both;
+      }
+.screen.list .location .artifact h5.nav, .screen.list .artist .artifact h5.nav {
+          margin: 0.2em 0 1em;
+        }
+.screen.list .location .artifact picture, .screen.list .artist .artifact picture {
+          float: left;
+          width: 40%;
+        }
+.screen.list .location .artifact .info, .screen.list .artist .artifact .info {
+          clear: none;
+          width: 55%;
+          margin: 0 0 0 4.5%;
+          float: right;
+        }
+.screen.list .location .artifact .info h3, .screen.list .artist .artifact .info h3 {
+            margin: 0.5em 0;
+          }
+.screen.list .location .artifact .info h4, .screen.list .artist .artifact .info h4 {
+            margin: 0.2em 0;
+          }
+.screen.list .location .artifact .button.styled, .screen.list .artist .artifact .button.styled {
+          float: left;
+          margin: 1em 0 0 4.5%;
+          max-width: 55%;
+        }
 .screen.list .detail {
-      border-top: 1px solid #aaa;
+      border-bottom: 1px solid #e0e0e0;
       padding: 0 0 1em;
       position: relative;
       width: 100%;
+      display: inline-block !important;
     }
 .screen.list .detail.visible .info {
-          max-height: 1000px;
-
-          /* transition: max-height var(--transition-duration); */
+          display: inherit;
         }
 .screen.list .detail.visible .info .preview {
             margin: 1em 0;
+          }
+.screen.list .detail.visible .artists,
+        .screen.list .detail.visible .artists3d {
+          font-size: 18px;
+        }
+.screen.list .detail.visible .artists li a, .screen.list .detail.visible .artists3d li a {
+              display: inline-block !important;
+            }
+.screen.list .detail.visible .artifact {
+          border-bottom: 1px solid #e0e0e0;
+        }
+.screen.list .detail.visible .artifact:last-child {
+            border-bottom: 0 none;
           }
 .screen.list .detail.visible a.info img {
           margin: 2px 0 0;
@@ -543,37 +639,44 @@ footer.main nav li {
         }
 .screen.list .detail h3 {
         cursor: pointer;
-        font-size: 1.6em;
+        font-size: 24px;
         margin: 0.5em 0;
-        text-transform: uppercase;
+        /* text-transform: uppercase; */
       }
 .screen.list .detail .title {
-        font-size: 0.9em;
         line-height: 1.4;
         margin: 1em 0 0;
         text-transform: uppercase;
       }
 .screen.list .detail .title span {
           display: inline-block;
-          height: 1.5em;
+          font-size: 15px;
           vertical-align: top;
+        }
+.screen.list .detail h5.title img {
+          width: 18px;
+        }
+.screen.list .detail h5.title span {
+          font-size: 12px;
+          line-height: 18px;
         }
 .screen.list .detail .logo {
         width: 1.5em;
         height: 1.5em;
         margin: 0 0.2em 0 0;
       }
+.screen.list .detail .artists,
+      .screen.list .detail .artists3d {
+        font-size: 18px;
+      }
 .screen.list .detail .artists li, .screen.list .detail .artists3d li {
-          display: inline-block;
+          display: inline-block !important;
           margin: 0 0 0.3em;
           width: 100%;
         }
 .screen.list .detail .artists li span, .screen.list .detail .artists3d li span {
             margin: 0 0.5em 0 0;
             float: left;
-          }
-.screen.list .detail .artists li a, .screen.list .detail .artists3d li a {
-            display: inline-block;
           }
 .screen.list .detail .artists li img, .screen.list .detail .artists3d li img {
             height: 1em;
@@ -585,26 +688,25 @@ footer.main nav li {
           margin: 1em 0;
           width: auto;
         }
-.screen.list .detail .arrow-up {
-        display: block;
-        float: right;
-        margin: 3em auto 0;
-        width: 23px;
-      }
 .screen.list .detail .info {
-        max-height: 0;
-        overflow: hidden;
+        display: none;
       }
-/* transition: max-height var(--transition-duration); */
 .screen.list .detail .info img {
           height: auto;
           max-width: 100%;
           max-height: 100%;
-          margin: 0;
+          margin: 0 0.3em 0 0;
         }
 .screen.list .detail h5.info {
         margin: 0;
       }
+.partners a img {
+    margin: 0 1em 0 0;
+  }
+.partners img.koer {
+    display: inline-block;
+    margin: 0 1em 2em 0;
+  }
 .exitScreenButton {
   width: 26px;
   height: 26px;
@@ -612,9 +714,41 @@ footer.main nav li {
   right: 15px;
   top: 60px;
 }
+.arrow {
+  display: block;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 15px;
+}
+.arrow.up {
+    display: none;
+  }
 .screen-visible .screen.visible {
   display: block;
 }
+.screen-visible .screen.visible .detail.visible .arrow.up {
+      display: block;
+    }
+.screen-visible .screen.visible .detail.visible .arrow.down {
+      display: none;
+    }
+.screen-visible .screen.visible .sub {
+    width: auto;
+    overflow-y: scroll;
+    margin: 15px 0 0;
+  }
+.screen-visible .screen.visible.list {
+    border-top: 1px solid #e0e0e0;
+  }
+.screen-visible .screen.visible.list nav {
+      margin: 15px 0;
+      width: 100%;
+    }
+.screen-visible .screen.visible.list nav ul {
+        display: inline-block;
+        float: right;
+      }
 #map-container {
   width: calc(100vw - 30px);
   height: calc(100% - 80px);
@@ -658,6 +792,7 @@ button {
     sans-serif;
   letter-spacing: 1px;
   outline: none;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-user-select: none;
@@ -681,6 +816,7 @@ button {
     sans-serif;
   letter-spacing: 1px;
   outline: none;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-user-select: none;
@@ -1219,7 +1355,6 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-popup-content h3 {
     font-weight: 500;
     margin: 10px 0;
-    text-transform: uppercase;
   }
 .leaflet-popup-content h4 {
     margin: 13px 0 0;
@@ -1407,38 +1542,20 @@ svg.leaflet-image-layer.leaflet-interactive path {
     text-align: center;
     transform: translateX(-50%);
   }
-body:not(.three-running) .leaflet-marker-icon[title^='Prater'],
-  body:not(.three-running) .leaflet-marker-icon[title='TheSystem'],
-  body:not(.three-running) .leaflet-marker-icon[title^='Stadt, Land'],
-  body:not(.three-running) .leaflet-marker-icon[title^='Bahnhof Ottakring'],
-  body:not(.three-running) .leaflet-marker-icon[title^='Johann Nepo'],
-  body:not(.three-running) .leaflet-marker-icon[title^='Pitch Control'] {
+/*
+body:not(.three-running) {
+  .leaflet-marker-icon[title^='Bahnhof Ottakring'],
+  .leaflet-marker-icon[title='TheSystem'],
+  .leaflet-marker-icon[title^='Stadt, Land'],
+  .leaflet-marker-icon[title^='Johann Nepomuk'] {
     background: #f08;
     border-radius: 100%;
-    -webkit-animation-name: blink;
-            animation-name: blink;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-  }
-@-webkit-keyframes blink {
-  0% {
-    box-shadow: #f08 0 0 0 0;
-  }
-
-  25% {
-    box-shadow: #f08 0 0 0 0;
-  }
-
-  75% {
-    box-shadow: #f08 0 0 0 8px;
-  }
-
-  100% {
-    box-shadow: #f08 0 0 0 0;
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
   }
 }
+
 @keyframes blink {
   0% {
     box-shadow: #f08 0 0 0 0;
@@ -1456,6 +1573,7 @@ body:not(.three-running) .leaflet-marker-icon[title^='Prater'],
     box-shadow: #f08 0 0 0 0;
   }
 }
+*/
 body.three-running {
   overflow: hidden;
 }
@@ -1472,6 +1590,7 @@ body.three-running {
   position: relative;
   top: 0;
   left: 0;
+  text-align: center;
 }
 #hud .w {
     background-color: rgba(0, 0, 0, 0.4);
@@ -1563,25 +1682,21 @@ body.three-running {
 }
 @media screen and (min-width: 800px) {
     .screen-visible #map-container {
-      width: calc(100vw - 420px);
+      width: calc(100vw - 520px);
     }
 
     .screen-visible #timeout-warning {
-      width: calc(100vw - 430px);
+      width: calc(100vw - 530px);
     }
 
     .screen-visible #toofar-warning {
-      width: calc(100vw - 430px);
+      width: calc(100vw - 530px);
     }
 
   .screen.visible {
     left: auto;
     right: 0;
-    width: 400px;
-  }
-
-  .detail {
-    display: inline-block;
+    width: 500px;
   }
           .screen[data-name="about"].visible .team li h5 {
             font-size: inherit;
@@ -1607,14 +1722,14 @@ body.three-running {
 }
 @media screen and (min-width: 1200px) {
   .screen.visible {
-    width: 500px;
+    width: 600px;
   }
     .screen-visible #map-container {
-      width: calc(100vw - 520px);
+      width: calc(100vw - 620px);
     }
 
     .screen-visible #timeout-warning {
-      width: calc(100vw - 530px);
+      width: calc(100vw - 630px);
     }
 
   #hud-exit-button {
@@ -1658,13 +1773,13 @@ body.three-running {
 }
 @media screen and (min-width: 1600px) {
   .screen.visible {
-    width: 600px;
+    width: 700px;
   }
     .screen-visible #map-container {
-      width: calc(100vw - 620px);
+      width: calc(100vw - 720px);
     }
 
     .screen-visible #timeout-warning {
-      width: calc(100vw - 630px);
+      width: calc(100vw - 730px);
     }
 }
