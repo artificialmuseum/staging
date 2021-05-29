@@ -1542,20 +1542,34 @@ svg.leaflet-image-layer.leaflet-interactive path {
     text-align: center;
     transform: translateX(-50%);
   }
-/*
-body:not(.three-running) {
-  .leaflet-marker-icon[title^='Bahnhof Ottakring'],
-  .leaflet-marker-icon[title='TheSystem'],
-  .leaflet-marker-icon[title^='Stadt, Land'],
-  .leaflet-marker-icon[title^='Johann Nepomuk'] {
+body:not(.three-running) .leaflet-marker-icon[title="Kaiserwiese"],
+  body:not(.three-running) .leaflet-marker-icon[title^="Pitch"] {
     background: #f08;
     border-radius: 100%;
-    animation-name: blink;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: blink;
+            animation-name: blink;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+@-webkit-keyframes blink {
+  0% {
+    box-shadow: #f08 0 0 0 0;
+  }
+
+  25% {
+    box-shadow: #f08 0 0 0 0;
+  }
+
+  75% {
+    box-shadow: #f08 0 0 0 8px;
+  }
+
+  100% {
+    box-shadow: #f08 0 0 0 0;
   }
 }
-
 @keyframes blink {
   0% {
     box-shadow: #f08 0 0 0 0;
@@ -1573,7 +1587,6 @@ body:not(.three-running) {
     box-shadow: #f08 0 0 0 0;
   }
 }
-*/
 body.three-running {
   overflow: hidden;
 }
