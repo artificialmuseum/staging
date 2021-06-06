@@ -735,6 +735,7 @@ footer.main nav li {
     width: auto;
     overflow-y: scroll;
     margin: 15px 0 0;
+    max-width: 100%;
   }
 .screen-visible .screen.visible.list {
     border-top: 1px solid #e0e0e0;
