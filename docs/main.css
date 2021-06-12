@@ -174,24 +174,22 @@ header.main,
 footer.main {
   z-index: 1000;
 }
-#three-canvas {
-  z-index: 2000;
-}
-#warning,
-#timeout-warning,
-#toofar-warning {
+.warning {
   z-index: 2001;
+}
+#onboardings {
+  z-index: 3000;
+}
+.popup {
+  z-index: 4000;
+}
+#three-canvas {
+  z-index: 10000;
 }
 #hud,
 #hud .w,
 #hud-exit-button {
-  z-index: 3000;
-}
-#onboardings {
-  z-index: 4000;
-}
-.popup {
-  z-index: 5000;
+  z-index: 11000;
 }
 * {
   box-sizing: border-box;
@@ -777,6 +775,7 @@ footer.main nav li {
     width: auto;
   }
 button {
+  background: transparent;
   border: 0 none;
   cursor: pointer;
   color: #fafafa;
@@ -801,6 +800,7 @@ button {
   white-space: nowrap;
 }
 .button {
+  background: transparent;
   border: 0 none;
   cursor: pointer;
   color: #fafafa;
@@ -952,8 +952,7 @@ button:disabled {
     width: 50px;
     height: 50px;
   }
-#timeout-warning-cancel,
-#toofar-warning-cancel-button {
+.warning .cancel-button {
   cursor: pointer;
   position: absolute;
   right: 15px;
@@ -981,6 +980,24 @@ button:disabled {
     padding: 15px;
   }
 #toofar-warning .container button {
+      margin: 1em auto;
+    }
+#fallback-warning {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fafafa;
+  display: none;
+  left: 15px;
+  position: fixed;
+  text-align: center;
+  top: 36px;
+  width: calc(100vw - 30px);
+}
+#fallback-warning .container {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 15px;
+  }
+#fallback-warning .container button {
       margin: 1em auto;
     }
 .popup {
@@ -1371,7 +1388,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     margin: 10px 0;
   }
 .leaflet-popup-content h4 {
-    margin: 13px 0 0;
+    margin: 6px 0 8px;
   }
 .leaflet-popup-content p {
     margin: 0;
