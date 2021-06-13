@@ -1015,6 +1015,12 @@ button:disabled {
     max-width: 400px;
     padding: 15px;
   }
+.popup .cancel-button {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
 #onboardings {
   width: calc(100vw - 60px);
   height: calc(100vh - 110px);
