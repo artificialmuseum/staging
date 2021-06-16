@@ -406,6 +406,118 @@ footer.main nav li {
 .screen h4 {
     font-size: 1.3em;
   }
+.screen[data-name="home"].visible {
+    font-size: 1.4em;
+    left: 0;
+    line-height: 1.4em;
+    padding: 0 0 0;
+    right: auto;
+    width: 100%;
+  }
+.screen[data-name="home"].visible div.header {
+      position: relative;
+      line-height: 0;
+    }
+.screen[data-name="home"].visible div.header::after {
+        box-shadow: inset 5px 5px 10px 10px #666;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+.screen[data-name="home"].visible div.header img {
+        width: 100%;
+      }
+.screen[data-name="home"].visible .content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+.screen[data-name="home"].visible h1, .screen[data-name="home"].visible h2 {
+      font-size: 1.3em;
+      font-weight: 500;
+    }
+.screen[data-name="home"].visible .cities {
+      margin: 50px 0;
+      text-align: center;
+    }
+.screen[data-name="home"].visible .cities ul {
+        display: inline-block;
+      }
+.screen[data-name="home"].visible .cities li {
+        float: left;
+        margin: 0 0.5em;
+      }
+.screen[data-name="home"].visible .cities a {
+        text-align: center;
+      }
+.screen[data-name="home"].visible .cities a img {
+          vertical-align: top;
+        }
+.screen[data-name="home"].visible .cities a p {
+          margin: 0;
+          font-size: 0.8em;
+          line-height: 1;
+        }
+.screen[data-name="home"].visible .cities svg {
+        height: 4.4em;
+      }
+.screen[data-name="home"].visible .cities img {
+        height: 3.5em;
+      }
+.screen[data-name="home"].visible .manifest {
+      margin: 0 0 2em;
+    }
+.screen[data-name="home"].visible .manifest h1 {
+        margin: 0 0 0.5em;
+      }
+.screen[data-name="home"].visible .video {
+      margin: 0 0 2em;
+    }
+.screen[data-name="home"].visible .exhibitions {
+      text-align: center;
+      display: inline-block;
+    }
+.screen[data-name="home"].visible .exhibitions h2 {
+        text-align: left;
+      }
+.screen[data-name="home"].visible .exhibitions ul {
+        width: 100%;
+        display: inline-block;
+      }
+.screen[data-name="home"].visible .exhibitions li {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        margin: 0 0 3em;
+      }
+.screen[data-name="home"].visible .exhibitions li img {
+          vertical-align: top;
+          width: 100%;
+        }
+.screen[data-name="home"].visible .exhibitions li h3 {
+          font-size: 1.1em;
+          font-weight: 600;
+          margin: 0.5em 0 0;
+        }
+.screen[data-name="home"].visible .exhibitions li h4 {
+          font-size: 1em;
+          margin: 0;
+        }
+.screen[data-name="home"].visible .exhibitions li a {
+          width: 100%;
+          display: block;
+        }
+.screen[data-name="home"].visible .exhibitions li .caption {
+          font-size: 0.8em;
+          background: #0c0c0c;
+          color: #fafafa;
+          text-align: center;
+          width: 100%;
+          padding: 1em 0;
+          text-decoration: none;
+        }
 .screen[data-name="about"].visible {
     font-size: 1.4em;
     left: 0;
@@ -467,44 +579,6 @@ footer.main nav li {
 .screen[data-name="about"].visible .collectives a {
         white-space: nowrap;
       }
-.screen[data-name="about"].visible footer {
-      background-color: #0c0c0c;
-      clear: both;
-      color: #fafafa;
-      display: inline-block;
-      font-size: 0.8em;
-      padding: 96px 0 150px;
-      margin: 96px 0 0;
-      width: 100vw;
-    }
-.screen[data-name="about"].visible footer a {
-        color: #fafafa;
-      }
-.screen[data-name="about"].visible footer > div {
-        padding: 0 25px;
-      }
-.screen[data-name="about"].visible footer > div > div {
-          margin: 0 0 80px;
-        }
-.screen[data-name="about"].visible footer h4,
-      .screen[data-name="about"].visible footer h5 {
-        font-size: 1em;
-        margin: 0;
-      }
-.screen[data-name="about"].visible footer svg.logo {
-        width: 50px;
-        height: 50px;
-        float: right;
-        position: absolute;
-        right: 1.5em;
-      }
-.screen[data-name="about"].visible footer .social a {
-        display: inline-block;
-        margin: 0 20px 0 0;
-      }
-.screen[data-name="about"].visible footer .social a svg.youtube {
-          margin: 0 0 8px 0;
-        }
 .screen[data-name="about"].visible h4 {
       font-size: 1.1em;
       margin: 1.2em 0 0.5em;
@@ -522,29 +596,6 @@ footer.main nav li {
         max-height: 60px;
         width: auto;
       }
-.screen[data-name="about"].visible .team {
-      display: inline-block;
-    }
-.screen[data-name="about"].visible .team li {
-        width: 27vw;
-        height: 27vw;
-        border: 1px solid;
-        float: left;
-        margin: 0 2vw 2vw 0;
-        max-height: 200px;
-        max-width: 200px;
-        text-align: center;
-      }
-.screen[data-name="about"].visible .team li h5 {
-          font-size: 0.9em;
-          line-height: 25px;
-          margin: 4vw 0 0.3em;
-        }
-.screen[data-name="about"].visible .team li p {
-          font-size: 0.8em;
-          line-height: 1.3em;
-          margin: 0;
-        }
 .screen .artist.detail .artifacts .artifact, .screen .artist.detail .visualizations .artifact {
         padding: 0 0 1em;
       }
@@ -696,6 +747,75 @@ footer.main nav li {
 .screen.list .detail h5.info {
         margin: 0;
       }
+.screen .team {
+    display: inline-block;
+  }
+.screen .team li {
+      width: 27vw;
+      height: 27vw;
+      border: 1px solid;
+      float: left;
+      margin: 0 2vw 2vw 0;
+      max-height: 200px;
+      max-width: 200px;
+      text-align: center;
+    }
+.screen .team li h5 {
+        font-size: 0.9em;
+        line-height: 25px;
+        margin: 4vw 0 0.3em;
+      }
+.screen .team li p {
+        font-size: 0.8em;
+        line-height: 1.3em;
+        margin: 0;
+      }
+.screen footer {
+    background-color: #0c0c0c;
+    clear: both;
+    color: #fafafa;
+    display: inline-block;
+    font-size: 0.8em;
+    padding: 100px 0 150px;
+    margin: 100px 0 0;
+    width: 100vw;
+  }
+.screen footer .content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+.screen footer a {
+      color: #fafafa;
+    }
+.screen footer > div {
+      padding: 0 25px;
+    }
+.screen footer > div > div {
+        margin: 0 0 80px;
+      }
+.screen footer h4,
+    .screen footer h5 {
+      font-size: 1em;
+      margin: 0;
+    }
+.screen footer svg.logo {
+      width: 40px;
+      height: 40px;
+      float: right;
+      position: absolute;
+      right: 1.5em;
+    }
+.screen footer .social {
+      margin: 0;
+    }
+.screen footer .social a {
+        display: inline-block;
+        margin: 0 20px 0 0;
+        width: 40px;
+      }
+.screen footer .social a svg.youtube {
+          margin: 0 0 8px 0;
+        }
 .partners a img {
     margin: 0 1em 0 0;
   }
@@ -1737,6 +1857,14 @@ body.three-running {
           max-width: 55%;
         }
 }
+@media screen and (min-width: 700px) {
+      .screen[data-name="home"].visible .cities svg {
+        height: 6.4em;
+      }
+      .screen[data-name="home"].visible .cities img {
+        height: 5.5em;
+      }
+}
 @media screen and (min-width: 800px) {
     .screen-visible #map-container {
       width: calc(100vw - 520px);
@@ -1776,9 +1904,31 @@ body.three-running {
           position: absolute;
           right: 48px;
         }
+        .screen[data-name="home"].visible .exhibitions li {
+          float: left;
+          width: 31%;
+          margin: 0 3.5% 0 0;
+        }
+
+          .screen[data-name="home"].visible .exhibitions li:last-child {
+            margin: 0;
+          }
+        .screen[data-name="home"].visible .caption span {
+          display: block;
+        }
 
     .screen[data-name="list"] .detail .button.close {
       display: none;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .screen[data-name="home"].visible .manifest {
+      float: left;
+      width: 40%;
+    }
+    .screen[data-name="home"].visible .video {
+      float: right;
+      width: 55%;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -1835,6 +1985,9 @@ body.three-running {
           position: absolute;
           right: 96px;
         }
+      .screen[data-name="home"].visible .caption span {
+        display: inline;
+      }
 }
 @media screen and (min-width: 1600px) {
   .screen.visible {
