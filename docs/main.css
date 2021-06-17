@@ -1712,6 +1712,22 @@ svg.leaflet-image-layer.leaflet-interactive path {
     text-align: center;
     transform: translateX(-50%);
   }
+/* Opposition - Ring */
+.leaflet-marker-icon[title="Dr. Karl Lueger Denkmal"],
+.leaflet-marker-icon[title="Stadtpark"],
+.leaflet-marker-icon[title="TU Wien"],
+.leaflet-marker-icon.oppositionring {
+  box-shadow: #0f8 0 0 0 3px;
+  border-radius: 100%;
+  background: #0f8;
+}
+/* Opposition - Volksgarten */
+.leaflet-marker-icon[title="Volksgarten"],
+.leaflet-marker-icon.oppositionvolksgarten {
+  box-shadow: #08f 0 0 0 3px;
+  border-radius: 100%;
+  background: #08f;
+}
 body:not(.three-running) .leaflet-marker-icon[title="Kaiserwiese"],
   body:not(.three-running) .leaflet-marker-icon[title^="Bahnhof Ottakring"],
   body:not(.three-running) .leaflet-marker-icon[title^="Johann Nepomuk"],
