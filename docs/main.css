@@ -254,6 +254,7 @@ h3,
 h4,
 h5 {
   margin: 1em 0 0.5em;
+  line-height: 1;
 }
 p {
   margin: 0 0 1em;
@@ -608,18 +609,21 @@ footer.main nav li {
         color: #666;
         border-top: 1px solid #e0e0e0;
       }
-.screen.list .location.detail .logo {
+.screen.list .location.detail .logo, .screen.list .artist.detail .logo {
           float: left;
           width: 30px;
           height: auto;
         }
-.screen.list .location.detail h3 {
+.screen.list .location.detail h3, .screen.list .artist.detail h3 {
           margin: 0;
           line-height: 28px;
         }
-.screen.list .location.detail .title {
+.screen.list .location.detail .title, .screen.list .artist.detail .title {
           margin: 1em 0 0.5em;
         }
+.screen.list .location h2, .screen.list .artist h2 {
+        margin: 0 0 0.5em;
+      }
 .screen.list .location .info, .screen.list .artist .info {
         display: inline-block;
       }
@@ -640,19 +644,27 @@ footer.main nav li {
           margin: 0 4.5% 0 0;
           float: left;
         }
-.screen.list .location .artifact .info h3, .screen.list .artist .artifact .info h3 {
+.screen.list .location .artifact .info h2, .screen.list .artist .artifact .info h2 {
             margin: 0.5em 0;
           }
 .screen.list .location .artifact .info h4, .screen.list .artist .artifact .info h4 {
-            margin: 0.2em 0;
+            margin: 1em 0 0;
+          }
+.screen.list .location .artifact .info h5, .screen.list .artist .artifact .info h5 {
+            margin: 0.5em 0;
           }
 .screen.list .detail {
       border-bottom: 1px solid #e0e0e0;
-      padding: 0 0 1em;
       position: relative;
       width: 100%;
       display: inline-block !important;
     }
+.screen.list .detail.artifact {
+        padding: 0 0 1em;
+      }
+.screen.list .detail.artist h2 {
+          margin: 0.5em 0;
+        }
 .screen.list .detail.visible .info {
           display: inherit;
         }
