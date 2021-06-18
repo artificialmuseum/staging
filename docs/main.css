@@ -1712,8 +1712,15 @@ svg.leaflet-image-layer.leaflet-interactive path {
     text-align: center;
     transform: translateX(-50%);
   }
+/* Featured Artifacts */
+.leaflet-marker-icon.featured {
+  background: #f08;
+  border-radius: 100%;
+  box-shadow: #f08 0 0 0 3px;
+}
 /* Opposition - Ring */
-.leaflet-marker-icon[title="Dr. Karl Lueger Denkmal"],
+.leaflet-marker-icon[title="Stubentor"],
+.leaflet-marker-icon[title="Parlament"],
 .leaflet-marker-icon[title="Stadtpark"],
 .leaflet-marker-icon[title="TU Wien"],
 .leaflet-marker-icon[title="Schottenring"],
@@ -1729,54 +1736,6 @@ svg.leaflet-image-layer.leaflet-interactive path {
   box-shadow: #08f 0 0 0 3px;
   border-radius: 100%;
   background: #08f;
-}
-body:not(.three-running) .leaflet-marker-icon[title="Kaiserwiese"],
-  body:not(.three-running) .leaflet-marker-icon[title^="Bahnhof Ottakring"],
-  body:not(.three-running) .leaflet-marker-icon[title^="Johann Nepomuk"],
-  body:not(.three-running) .leaflet-marker-icon[title="TheSystem"],
-  body:not(.three-running) .leaflet-marker-icon[title^="Stadt, Land,"] {
-    background: #f08;
-    border-radius: 100%;
-    -webkit-animation-name: blink;
-            animation-name: blink;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-  }
-@-webkit-keyframes blink {
-  0% {
-    box-shadow: #f08 0 0 0 0;
-  }
-
-  25% {
-    box-shadow: #f08 0 0 0 0;
-  }
-
-  75% {
-    box-shadow: #f08 0 0 0 8px;
-  }
-
-  100% {
-    box-shadow: #f08 0 0 0 0;
-  }
-}
-@keyframes blink {
-  0% {
-    box-shadow: #f08 0 0 0 0;
-  }
-
-  25% {
-    box-shadow: #f08 0 0 0 0;
-  }
-
-  75% {
-    box-shadow: #f08 0 0 0 8px;
-  }
-
-  100% {
-    box-shadow: #f08 0 0 0 0;
-  }
 }
 body.three-running {
   overflow: hidden;
