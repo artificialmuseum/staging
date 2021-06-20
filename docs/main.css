@@ -434,6 +434,7 @@ footer.main nav li {
 .screen[data-name="home"].visible .content {
       max-width: 1200px;
       margin: 0 auto;
+      padding: 0 25px;
     }
 .screen[data-name="home"].visible h1, .screen[data-name="home"].visible h2 {
       font-size: 1.3em;
@@ -805,10 +806,11 @@ footer.main nav li {
 .screen footer > div > div {
         margin: 0 0 80px;
       }
-.screen footer h4,
-    .screen footer h5 {
-      font-size: 1em;
-      margin: 0;
+.screen footer h5 {
+      font-size: 1.1em;
+    }
+.screen footer h4, .screen footer h5 {
+      margin: 0.5em 0;
     }
 .screen footer svg.logo {
       width: 40px;
@@ -1723,7 +1725,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-marker-icon[title="Parlament"],
 .leaflet-marker-icon[title="Stadtpark"],
 .leaflet-marker-icon[title="TU Wien"],
-.leaflet-marker-icon[title="Schottenring"],
+.leaflet-marker-icon[title="BMI"],
+.leaflet-marker-icon[title="State Opera"],
 .leaflet-marker-icon[title="Rathausplatz"],
 .leaflet-marker-icon.oppositionring {
   box-shadow: #0f8 0 0 0 3px;
