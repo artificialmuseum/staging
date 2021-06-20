@@ -420,7 +420,7 @@ footer.main nav li {
       line-height: 0;
     }
 .screen[data-name="home"].visible div.header::after {
-        box-shadow: inset 5px 5px 10px 10px #666;
+        box-shadow: inset 0 0 5px 5px #999;
         content: '';
         display: block;
         height: 100%;
