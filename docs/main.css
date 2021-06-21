@@ -464,9 +464,11 @@ footer.main nav li {
         }
 .screen[data-name="home"].visible .cities svg {
         height: 4.4em;
+        width: auto;
       }
 .screen[data-name="home"].visible .cities img {
         height: 3.5em;
+        width: auto;
       }
 .screen[data-name="home"].visible .manifest {
       margin: 0 0 2em;
