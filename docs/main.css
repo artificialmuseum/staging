@@ -1729,18 +1729,19 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-marker-icon[title="TU Wien"],
 .leaflet-marker-icon[title="BMI"],
 .leaflet-marker-icon[title="State Opera"],
+.leaflet-marker-icon[title="Wienmuseum Karlsplatz"],
 .leaflet-marker-icon[title="Rathausplatz"],
 .leaflet-marker-icon.oppositionring {
-  box-shadow: #0f8 0 0 0 3px;
+  box-shadow: #e03100 0 0 0 3px;
   border-radius: 100%;
-  background: #0f8;
+  background: #e03100;
 }
 /* Opposition - Volksgarten */
 .leaflet-marker-icon[title="Volksgarten"],
 .leaflet-marker-icon.oppositionvolksgarten {
-  box-shadow: #08f 0 0 0 3px;
+  box-shadow: #407bb3 0 0 0 3px;
   border-radius: 100%;
-  background: #08f;
+  background: #407bb3;
 }
 body.three-running {
   overflow: hidden;
@@ -1860,19 +1861,19 @@ body.three-running {
       }
 }
 @media screen and (min-width: 800px) {
-    .screen-visible #map-container {
+    .screen-visible:not(.home) #map-container {
       width: calc(100vw - 520px);
     }
 
-    .screen-visible #timeout-warning {
+    .screen-visible:not(.home) #timeout-warning {
       width: calc(100vw - 515px);
     }
 
-    .screen-visible #toofar-warning {
+    .screen-visible:not(.home) #toofar-warning {
       width: calc(100vw - 515px);
     }
 
-    .screen-visible .popup {
+    .screen-visible:not(.home) .popup {
       width: calc(100vw - 515px);
     }
 
@@ -1929,15 +1930,15 @@ body.three-running {
   .screen.visible {
     width: 600px;
   }
-    .screen-visible #map-container {
+    .screen-visible:not(.home) #map-container {
       width: calc(100vw - 620px);
     }
 
-    .screen-visible #timeout-warning {
+    .screen-visible:not(.home) #timeout-warning {
       width: calc(100vw - 615px);
     }
 
-    .screen-visible .popup {
+    .screen-visible:not(.home) .popup {
       width: calc(100vw - 615px);
     }
 
@@ -1987,15 +1988,15 @@ body.three-running {
   .screen.visible {
     width: 700px;
   }
-    .screen-visible #map-container {
+    .screen-visible:not(.home) #map-container {
       width: calc(100vw - 720px);
     }
 
-    .screen-visible #timeout-warning {
+    .screen-visible:not(.home) #timeout-warning {
       width: calc(100vw - 720px);
     }
 
-    .screen-visible .popup {
+    .screen-visible:not(.home) .popup {
       width: calc(100vw - 720px);
     }
 }
