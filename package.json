@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "description": "Artificial Museum - TheSystemCollective - Staging Environment.",
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "npm run dev",
     "dev": "grundstein-server --dir ./docs --port 8000 --cors '*'",
-    "build": "cp ../ar/docs/* ./docs/ -r"
+    "build": "./src/bin.js"
   },
   "repository": {
     "type": "git",
