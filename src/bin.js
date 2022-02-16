@@ -49,7 +49,11 @@ const run = async () => {
     args.out = path.join(cwd, args.out)
   }
 
+  await fs.rmrf(args.out)
+  log.warn('Deleted', args.out)
+
   await fs.mkdirp(args.out)
+  log.success('Recreated', args.out)
 
   const files = await fs.getFiles(args.dir)
 
