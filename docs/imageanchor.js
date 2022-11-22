@@ -1,1 +1,1 @@
-
+console.log("img detect");
