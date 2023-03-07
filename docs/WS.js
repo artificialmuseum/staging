@@ -1,0 +1,1 @@
+class o{constructor(o){var{host:s,port:c,protocol:e,onClose:n,onMessage:t,onOpen:r}=o;try{var a=this.ws=new WebSocket("".concat(e,"://").concat(s,":").concat(c));r&&(a.onopen=r),t&&(a.onmessage=t),n&&(a.onclose=n)}catch(o){console.error(o),this.ws={}}}close(){var o;null===(o=this.ws)||void 0===o||o.close()}}export{o as WS};
